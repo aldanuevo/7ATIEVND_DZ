@@ -17,9 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/algo',['as'=>'ruta','uses'=>'EjemploController@index']);
-Route::get('/tabla',['as'=>'miTabla','uses'=>'EjemploController@tabla']);
-
-//Route::get('/algo',['as'=>'ruta','uses'=>'App\Http\Controllers\EjemploController@index']);
-//Route::get('/tabla',['as'=>'mitabla','uses'=>'App\Http\Controllers\EjemploController@tabla']);
