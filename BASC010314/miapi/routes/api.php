@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/algo',['as'=>'ruta','uses'=>'App\Http\Controllers\EjemploController@index']);
+Route::get('/tabla',['as'=>'mitabla','uses'=>'App\Http\Controllers\EjemploController@tabla']);
+Route::get('/productos',['as'=>'obtenerProductos','uses'=>'App\Http\Controllers\EjemploController@getProducts']);
